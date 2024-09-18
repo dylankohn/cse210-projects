@@ -4,6 +4,19 @@
     "configurations": [
 
         {
+            "name": "dylanSandbox Project",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-sandbox-dylanSandbox",
+            "program": "${workspaceFolder}/sandbox/dylanSandbox/bin/Debug/net8.0/dylanSandbox.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/sandbox/dylanSandbox",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "stopAtEntry": false
+        },
+
+        {
             "name": "Sandbox Project",
             "type": "coreclr",
             "request": "launch",
