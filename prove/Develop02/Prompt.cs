@@ -1,6 +1,6 @@
 using System;
 
-class Program
+class Prompt
 {
     static void Main(string[] args)
     {
