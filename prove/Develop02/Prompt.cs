@@ -10,9 +10,7 @@ class Prompt
             "What is the thing that made you the most happy today?", "What do you think you can do differently tomorrow?", 
             "How have you blessed other peoples lives today?"
         };
-    
     static private Random random = new Random();
-
     public string generatePrompt()
     {
         int _randomIndex = random.Next(0, _promptPool.Length);

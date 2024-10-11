@@ -38,7 +38,7 @@ class Program
                 myJournal._entryList.Add(new Entry(input, dateInput, promptContent));
     
             }
-
+            
             if(menuInput == 2){
                 myJournal.displayEntry();
             }
