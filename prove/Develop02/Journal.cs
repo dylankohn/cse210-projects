@@ -34,13 +34,12 @@ class Journal
     public void DisplayEntries()
     {
         string filePath = "journal.txt";
-        // Open the file using StreamReader and read it line by line
         using (StreamReader reader = new StreamReader(filePath))
         {
             string line;
             while ((line = reader.ReadLine()) != null)
             {
-                Console.WriteLine(line);  // Display each line in the console
+                Console.WriteLine(line);
             }
         }
     }
