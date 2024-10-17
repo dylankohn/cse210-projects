@@ -44,7 +44,7 @@ class Program
             }
 
             if(menuInput == 3){
-                myJournal.DisplayEntries();
+                myJournal.displayEntries();
             }
 
             if(menuInput == 4){

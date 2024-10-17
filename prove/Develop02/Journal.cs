@@ -31,7 +31,7 @@ class Journal
         Console.WriteLine("Saved to Journal");
     }
     
-    public void DisplayEntries()
+    public void displayEntries()
     {
         string filePath = "journal.txt";
         using (StreamReader reader = new StreamReader(filePath))
