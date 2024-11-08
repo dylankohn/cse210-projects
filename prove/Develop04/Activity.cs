@@ -6,9 +6,10 @@ public class Activity
     protected string _description;
     public void DisplayMessages()
     {
+        Console.Clear();
         Console.WriteLine(_startMessage);
-        Console.WriteLine(_description);
-        Console.Write("How long would you like to do this activity for in seconds? ");
+        Console.WriteLine(_description + Environment.NewLine);
+        Console.Write("How long would you like to do this activity for in seconds? " + Environment.NewLine);
     }
     protected int _duration = 0;
 

@@ -6,10 +6,13 @@ public class Breathing : Activity
         _description = "This activity will help you relax and focus on your breathing.";
 
         DisplayMessages();
-        Console.Write("How long would you like to do this activity for in seconds? ");
         string userinput = Console.ReadLine();
         _duration = int.Parse(userinput);
-
+        Console.Clear();
+        Console.WriteLine("Get Ready...");
+        Animation();
+        Thread.Sleep(1500);
+        Console.Clear();
         int breathDuration = 4;
         int breathCount = _duration / breathDuration;
 
@@ -20,7 +23,7 @@ public class Breathing : Activity
             if (elapsedTime >= _duration) break;
             Thread.Sleep(500);
             Console.Write("\b \b");
-            Console.WriteLine("Breathe in ");
+            Console.WriteLine(Environment.NewLine + "Breathe in ");
             StartAnimation(breathDuration);
             Thread.Sleep(4000);
 
@@ -29,13 +32,15 @@ public class Breathing : Activity
             if (elapsedTime >= _duration) break;
             Thread.Sleep(500);
             Console.Write("\b \b");
-            Console.WriteLine("Breathe out ");
+            Console.WriteLine(Environment.NewLine + "Breathe out ");
             StartAnimation(breathDuration);
             Thread.Sleep(4000);
             
             elapsedTime += 4;
         }
+        Console.Clear();
         Console.WriteLine("Breathing activity complete.");
         Thread.Sleep(4000);
+        Console.Clear();
     }
 }
