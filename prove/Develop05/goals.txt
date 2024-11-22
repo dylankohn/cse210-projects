@@ -1,0 +1,3 @@
+20
+ChecklistGoal,Scripture reading,read the scriptures,10,10,3,1
+SimpleGoal:Temple,Temple attendance,10,True
