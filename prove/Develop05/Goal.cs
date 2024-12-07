@@ -59,7 +59,7 @@ public class Goal
             }
             else if (parts[0] == "EternalGoal")
             {
-                Eternal newEternal = new Eternal(parts[1], parts[2], Convert.ToInt32(parts[3]), Convert.ToInt32(parts[4]));
+                Eternal newEternal = new Eternal(parts[1], parts[2], Convert.ToInt32(parts[3]), Convert.ToInt32(parts[4]), Convert.ToBoolean(parts[5]));
                 _goals.Add(newEternal);
             }
             else if (parts[0] == "ChecklistGoal")
