@@ -20,6 +20,18 @@ public class IncomeTracking : BaseClass
         }
     }
 
+    public void AddIncomeTithing(decimal income)
+    {
+        if (_incomeCount < _income.Length)
+        {
+            _income[_incomeCount++] = income * 0.9m;
+        }
+        else
+        {
+            Console.WriteLine("Income list is full.");
+        }
+    }
+
     public decimal GetTotalIncome()
     {
         decimal total = 0;
